@@ -6,8 +6,8 @@
 // module  -  info about current module (file)
 // process  -  info about the env where the program is being executed
 
-const _ = require('lodash');
+const sayHi = (name) => {
+  console.log(`Hello there ${name}`);
+};
 
-const items = [1, [2, [3, [4]]]]
-const newItems = _.flattenDeep(items)
-console.log(newItems)
+module.exports = sayHi;
